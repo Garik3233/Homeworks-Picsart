@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables</title>
+</head>
+<body>
+    <table border = "3" 
+           width="300" 
+           cellpadding = "4" 
+           cellspacing = "3"
+           style="border: 3px solid grey;"
+    >
+        <tr>
+            <th style="border: 3px solid grey;" colspan="4">Product</th>
+        </tr>
+        <tr>
+           <th style="border: 3px solid grey;">No</th>
+           <th style="border: 3px solid grey;">P. Name</th>
+           <th style="border: 3px solid grey;">P. Count</th>
+        </tr>
+        <tr>
+           <td style="border: 3px solid grey;">1</td>
+           <td style="border: 3px solid grey;">Pen</td>
+           <td style="border: 3px solid grey;" rowspan="3">50</td>
+        </tr>
+        <tr>
+            <td style="border: 3px solid grey;">2</td>
+            <td style="border: 3px solid grey;">Book</td>
+         </tr>
+         <tr>
+            <td style="border: 3px solid grey;">3</td>
+            <td style="border: 3px solid grey;">Dust</td>
+         </tr>
+     </table>
+     <br>
+     <hr>
+
+     <table border="1">
+        <tr>
+            <th colspan="4" style="color:red;">Table using Colspan and Rowspan</th>
+        </tr>
+        <tr>
+            <th colspan="4">Khanewal Self Store</th>
+        </tr>
+        <tr>
+            <th>Item/Desc</th>
+            <th>QTY</th>
+            <th>Price/Unit</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>Sugger</td>
+            <td>5kg</td>
+            <td>50</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>Cooking Oil</td>
+            <td>2kg</td>
+            <td>200</td>
+            <td>400</td>
+        </tr>
+        <tr>
+            <td>Soap</td>
+            <td>4 Pieces</td>
+            <td>40</td>
+            <td>160</td>
+        </tr>
+        <tr>
+            <td  colspan="3">Sub Total</td>
+            <td>810</td>
+        </tr>
+        <tr>
+            <td colspan="2">Tax</td>
+            <td>5%</td>
+            <td>41</td>
+        </tr>
+        <tr>
+            <td colspan="3">Total Bill</td>
+            <td>851</td>
+        </tr>
+     </table>
+     <br>
+     <hr>
+
+     <table border="1" width="400">
+         <tr>HTML th rowspan Attribute</tr>
+         <tr>
+             <th>NAME</th>
+             <th rowspan="3">AGE</th>
+             <th>BRANCH</th>
+         </tr>
+         <tr>
+             <td>BITTU</td>
+             <td>CSE</td>
+         </tr>
+         <tr>
+             <td>RAKESH</td>
+             <td>EC</td>
+         </tr>
+     </table>
+     <br>
+     <hr>
+
+     <table>
+         <tr>
+             <th style="border:1px solid;">Column 1</th>
+             <th style="border:1px solid;">Column 2</th>
+             <th style="border:1px solid;">Column 3</th>
+         </tr>
+         <tr>
+             <td style="border:1px solid;" colspan="2">Row 1 Column 1-2</td>
+             <td style="border:1px solid;">Row 1 Column 3</td>
+         </tr>
+         <tr>
+            <td style="border:1px solid;" colspan="3">Row 1 Column 1-2</td>
+         </tr>
+     </table>
+        
+</body>
+</html>
