@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+<body>
+    <article id="first_video">
+        <h2>Video No 1</h2>
+        <p>Used attributes: <b>controls, autoplay, muted, loop, width.</b> </p>
+        <video controls autoplay muted loop width="75%">
+            <source src="Files/Creative short film Wonderful littleworld.mp4" type="video/mp4"/>
+            <source src="Files/Creative short film.webm" type="video/webm"/> 
+            <source src="Files/Creative short film Wonderful littleworld-ogg.ogg" type="video/ogg"/>
+            Display this message, if your browser does not support video tag.
+          </video>
+    </article>
+    <br><br>
+
+    <article id="second_video">
+        <h2>Video No 2</h2>
+        <p>Used attributes: <b>preload, poster, width, height.</b>  </p>
+        <video controls preload="none" poster="Files/1.jpg" width="75%" height="100%">
+            <source src="Files/Change Your Focus.mp4" type="video/mp4"/>
+        </video>
+    </article>
+    <br><br>
+
+    <article id="third_video">
+        <h2>Video No 3</h2>
+        <p>This one is very funny</p>
+        <iframe 
+            width="1000" 
+            height="650" 
+            src="https://www.youtube.com/embed/WjWv1Gw4i-s" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </article>
+</body>
+</html>
