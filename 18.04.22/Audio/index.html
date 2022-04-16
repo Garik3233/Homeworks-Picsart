@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+</head>
+<body>
+    <section>
+        <h1>Audio files</h1>
+        <p>HTML &lt;audio&gt; tag, supports 3 types of audio files</p>
+        <ul>
+            <li>mp3 - MIME-type audio/mpeg</li>
+            <li>wav - MIME-type audio/wav</li>
+            <li>ogg - MIME-type audio/ogg</li>
+        </ul><br>
+        <audio controls="controls">
+            Your browser does not support the &lt;audio&gt; tag. 
+            <source src="files/Komitas_1.mp3" />
+            <source src="files/Komitas_1.wav" />
+            <source src="files/Komitas_1.ogg" />
+        </audio>
+    </section>
+    <section>
+        <h2> &lt;audio&gt; tag attributes</h2>
+        <dl>
+            <dt>src
+                <dd>Specifies the URL of audio file.</dd>
+            </dt><br>
+            <dt>autoplay
+                <dd>Attached audio will play automatically when it loads.</dd>
+            </dt><br>
+            <dt>control
+                <dd>Specifies what controls should display with the audio player (i.e. play, stop, pause button).</dd>
+            </dt><br>
+            <dt>loop
+                <dd>Specifies audio file should be repeat continuously.</dd>
+            </dt><br>
+            <dt>muted
+                <dd>Specifies audio file should be muted.</dd>
+            </dt><br>
+            <dt>preload
+                <dd>Specifies how to audio file should load.</dd>
+            </dt><br>
+        </dl>
+        <h3>Used attributes: <em>controls, autoplay, muted</em> </h3>
+        <audio controls="controls" autoplay muted>
+            Your browser does not support the &lt;audio&gt; tag. 
+            <source src="files/Komitas_2.mp3" />
+            <source src="files/Komitas_2.wav" />
+            <source src="files/Komitas_2.ogg" />
+        </audio>
+
+        <h3>Used attributes: <em>controls, loop, preload</em> </h3>
+        <audio controls="controls" loop preload="none">
+            Your browser does not support the &lt;audio&gt; tag. 
+            <source src="files/Komitas_3.mp3" />
+            <source src="files/Komitas_3.wav" />
+            <source src="files/Komitas_3.ogg" />
+        </audio>
+    </section>
+</body>
+</html>
