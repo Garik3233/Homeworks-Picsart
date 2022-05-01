@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+}
+
+.container {
+    /* padding: 200px auto; */
+    position: relative;
+}
+
+.box-1,
+.box-2,
+.box-3 {
+    width: 33%;
+    height: 100px;
+    display: inline-block;
+    margin: 20% auto;
+    color: aliceblue;
+    text-align: center;
+    line-height: 100px;
+    background-color: palevioletred;
+}
+
+.box-2 {
+    border: 3px solid violet;
+    position: absolute;
+    top: -6%;
+    left: 30%;
+    z-index: 1;
+}
+
+.box-3 {
+    position: absolute;
+    right: 0;
+}

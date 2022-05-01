@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.big {
+    background-color: blueviolet;
+    max-width: 1600px;
+    height: 95vh;
+    margin: 0 auto;
+}
+
+.medium {
+    width: 85%;
+    height: 85%;
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    background-color: orangered;
+}
+
+.small {
+    width: 70%;
+    height: 55%;
+    background-color: yellowgreen;
+    position: absolute;
+    top: -7%;
+    left: 15%;
+    border: 3px dotted black;
+    font-size: 55px;
+    text-align: center;
+    line-height: 400px;
+    z-index: 100;
+}
+
