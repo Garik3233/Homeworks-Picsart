@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Pseudo classes and any properties</h1>
+        
+    </header>
+    <section class="section_1">
+        <h3>CSS :nth-child() Selector</h3>
+        <p>
+            In CSS, selectors are patterns used to 
+            select the element(s) you want to style.
+        </p>
+        <p>The :nth-child(n) selector matches every 
+            element that is the nth child of its parent.
+        </p>
+        <p>
+            n can be a number, a keyword (odd or even), or a formula (like an + b).
+        </p>
+        <p>
+            Odd and even are keywords that can be used to match child elements 
+            whose index is odd or even (the index of the first child is 1).
+        </p>
+        <ul class="one">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+        <p>
+            Using a formula (an + b). Description: a represents a cycle size, 
+            n is a counter (starts at 0), and b is an offset value.
+        </p>
+        <p>
+            Here, we specify a background color for all <strong>li</strong> elements whose index 
+            start from 1 and continue every 4th (will select the first, fifth, ninth, etc):
+        </p>
+        <ol>
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+            <li>Item4</li>
+            <li>Item5</li>
+            <li>Item6</li>
+            <li>Item7</li>
+            <li>Item8</li>
+            <li>Item9</li>
+            <li>Item10</li>
+            <li>Item11</li>
+            <li>Item12</li>
+            <li>Item13</li>
+        </ol>
+        <p>
+            The [attribute*=value] selector matches every element whose 
+            attribute value containing a specified value.
+        </p>
+        <p>
+            Here, every even number has u special attribute, which makes its big size.
+            1 <span class="big">2</span>
+            3 <span class="big">4</span>
+            5 <span class="big">6</span>
+            7 <span class="big">8</span>
+            9 <span class="big">10</span>
+        </p>
+
+        <h3>CSS :nth-last-child() Selector</h3>
+        <p>
+            The :nth-last-child(n) selector matches every element that is 
+            the nth child, regardless of type, of its parent, counting from the last child.
+            n can be a number, a keyword, or a formula.
+        </p>
+        <ul class="two">
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+            <li>Item4</li>
+            <li>Item5</li>
+            <li>Item6</li>
+            <li>Item7</li>
+            <li>Item8</li>
+            <li>Item9</li>
+            <li>Item10</li>
+        </ul>
+        <h3>CSS :nth-of-type() Selector</h3>
+        <p>
+            The :nth-of-type(n) selector matches every element that is the nth child, 
+            of the same type (tag name), of its parent.
+            n can be a number, a keyword (odd or even), or a formula (like an + b).
+        </p>
+        <div class="par">
+            <p>The first paragraph.</p>
+            <p>The second paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The fourth paragraph.</p>
+            <p>The fifth paragraph.</p>
+            <p>The sixth paragraph.</p>
+            <p>The seventh paragraph.</p>
+            <p>The eight paragraph.</p>
+            <p>The ninth paragraph.</p>
+        </div>
+    </section>
+    <section class="section_2">
+        <h3>Visibility and display: 'none'</h3>
+        <p>
+            The visibility property specifies whether or not an element is visible, 
+            but <strong>display: 'none';</strong> The element is <strong>completely</strong> removed.
+        </p>
+        <p>
+            For example in this paragraph there are used both cases after 
+            <em>thisWord</em> <span class="hidden">hidden-word</span> and <em>thisWord</em> <span class="none">stolen-word</span> _.
+        </p>
+        <p>
+            The difference is - visibility: hidden hides the element, 
+            but it still takes up space in the layout. 
+            display: none removes the element completely from the document as above.
+        </p>
+        <h3>Opacity and RGBA</h3>
+        <p>
+            Opacity sets the opacity value for an element and all of its children, 
+            while RGBA sets the opacity value only for a single declaration.
+        </p>
+        <div>
+            <div class="opacity">Opacity</div>
+            <div class="middle">VS</div>
+            <div class="alpha">RGBA</div>
+        </div>
+        <h3>Inherited and not inherited properties</h3>
+        <ul>Inherited
+            <li><strong>Font Type:</strong> font-style、font-variant、font-weight、font-stretch、font-size、font-family、color、line-height;</li>
+            <li><strong>Space Type:</strong> letter-spacing、word-spacing、white-space;</li>
+            <li><strong>Letter Type:</strong> text-align、text-indent、text-shadow、text-transform;</li>
+            <li><strong>List Type:</strong> list-style、list-style-type、list-style-position;</li>
+            <li><strong>Others:</strong> visibility、cursor;</li>
+        </ul>
+        <ul>Not Inherited
+            <li><strong>Layout Type:</strong> float、position、left、right、top、bottom、z-index、display</li>
+            <li><strong>Box Type:</strong> width、max-width、min-width、height、max-height、min-height、margin、padding、border;</li>
+            <li><strong>Background Type:</strong> background-size、background-image、background-clip、background-color、background-origin、background-position、background-repeat;</li>
+            <li><strong>Others:</strong> overflow、text-overflow、vertical-align;</li>
+        </ul>
+
+        <div class="compare_one">Box 1
+            <div class="to_another">Box 2</div>
+        </div>
+        <div class="compare_two">Box 3
+            <div class="two_another">Box 4</div>
+        </div>
+        <p class="inline">This is PARENT paragraph and has more than 200 pixels width.
+            <span class="inline_child">
+                This is CHILD paragraph which has 
+                more than 200 pixels width as well and its display 
+                is <strong>Inherited</strong> as block.
+            </span>
+        </p>
+    </section>
+</body>
+</html>

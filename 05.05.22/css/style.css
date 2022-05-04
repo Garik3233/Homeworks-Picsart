@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(230, 222, 215);
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 4px grey;
+}
+
+.section_1,
+.section_2 {
+    padding: 15px 30px;
+}
+
+.section_1 > .one {
+    margin-left: 100px;
+    padding: 25px;
+    list-style-type: none;
+    display: inline-block;
+    box-shadow: 0 5px 10px rgb(38, 38, 38);
+}
+
+.section_1 > .one > li:nth-child(odd) {
+    color: green;
+}
+
+.section_1 > .one > li:nth-child(even) {
+    background-color: green;
+}
+
+.section_1 > ol {
+    margin-left: 100px;
+    padding: 25px;
+    list-style: none;
+    display: inline-block;
+    box-shadow: 0 3px 7px rgb(38, 38, 38);
+}
+
+.section_1 > ol > li:nth-child(4n+1) {
+    color: red;
+  }
+
+  .section_1 > .two {
+    margin-left: 100px;
+    padding: 25px;
+    list-style: none;
+    display: inline-block;
+    box-shadow: 0 3px 7px rgb(38, 38, 38);
+  }
+
+.section_1 > .two > li:nth-last-child(2n) {
+    color: rgb(113, 0, 128);
+}
+
+span[class*="big"] {
+    font-size: 30px;
+    text-shadow: 5px 4px 5px rgb(218, 22, 22);
+}
+
+.par > p:nth-of-type(3n) {
+    /* margin-left: 75px; */
+    width: 30%;
+    box-shadow: 0 5px 10px yellowgreen;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.none {
+    display: none;
+}
+
+.opacity,
+.alpha {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    color: aliceblue;
+    text-align: center;
+    line-height: 150px;
+}
+
+.opacity { 
+    background-color: blueviolet; 
+    opacity: .7;
+}
+
+.alpha { 
+    background-color: rgba(219, 39, 204, .5); 
+}
+
+.middle {
+    display: inline-block;
+}
+
+.compare_one {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 50px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: bisque;
+    color: #000;
+}
+
+.to_another {
+    width: 75px;
+    height: 75px;
+    margin: 16px auto;
+    text-align: center;
+    line-height: 75px;
+    border: inherit;      /* inherited border */
+    background-color: burlywood;
+    color: #000;
+}
+
+.compare_two {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 90px;
+    text-align: center;
+    background-color: rgb(13, 108, 118);
+    color: #000;
+}
+
+.two_another {
+    width: 75px;
+    height: inherit;         /* inherited height */
+    margin: 16px auto;
+    text-align: center;
+    line-height: 75px;   
+    background-color: rgb(12, 191, 219);
+    color: #000;
+}
+
+.inline {
+    /* display: inline-block; */
+    color: #333;
+}
+
+.inline_child {
+    display: inherit;
+}
