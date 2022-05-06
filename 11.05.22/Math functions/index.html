@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Math Functions</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Math Functions</h1>
+    </header>
+    <section>
+        <div class="calc">
+            <p>
+                The CSS math functions allow mathematical expressions to be used as property values. 
+                Here, we will explain the <strong>calc()</strong>, 
+                <strong>max()</strong> and <strong>min()</strong> functions.
+            </p>
+            <h2>The calc() Function</h2>
+            <p>
+                The <strong>calc()</strong> function performs a calculation to be used as the property value.
+            </p>
+            <div class="syntax">
+                <h3>Syntax</h3>
+                <p>
+                   calc(<span>expression</span>)
+                </p>
+            </div>
+            <p class="desc">
+                Description about <span>expression</span> of parantheses: <em>
+                    Required. A mathematical expression. The result will be used as the value.
+                    The following operators can be used: + - * /
+                </em>
+            </p>
+            <div class="example-calc">
+                <h3>Example</h3>
+                <div class="example1">Width with calc(100% - 300px)</div>
+            </div>
+        </div>
+        <div class="max">
+            <h2>The max() Function</h2>
+            <p>
+                The <strong>max()</strong> function uses the largest value, 
+                from a comma-separated list of values, as the property value.
+            </p>
+            <div class="syntax">
+                <h3>Syntax</h3>
+                <p>
+                   max(<span>value1, value2, ...</span>)
+                </p>
+            </div>
+            <p class="desc">
+                Description about <span>value1, value2, ...</span> of parantheses: <em>
+                    Required. A list of comma-separated values - 
+                    where the largest value is chosen
+                </em>
+            </p>
+            <div class="example-max">
+                <h3>Example</h3>
+                <div class="example2">Width with max(40%, 200px)</div>
+            </div>
+        </div>
+        <div class="min">
+            <h2>The min() Function</h2>
+            <p>
+                The <strong>min()</strong> function uses the smallest value, 
+                from a comma-separated list of values, as the property value.
+            </p>
+            <div class="syntax">
+                <h3>Syntax</h3>
+                <p>
+                   min(<span>value1, value2, ...</span>)
+                </p>
+            </div>
+            <p class="desc">
+                Description about <span>value1, value2, ...</span> of parantheses: <em>
+                    Required. A list of comma-separated values - 
+                    where the smallest value is chosen
+                </em>
+            </p>
+            <div class="example-min">
+                <h3>Example</h3>
+                <div class="example3">Width with min(80%, 800px)</div>
+            </div>
+        </div>
+        <div class="clamp">
+            <h2>The clamp() Function</h2>
+            <p>
+                The <strong>clamp()</strong> CSS function clamps a value 
+                between an upper and lower bound. <strong>clamp()</strong> 
+                enables selecting a middle value within a range of 
+                values between a defined minimum and maximum.
+            </p>
+            <div class="syntax">
+                <h3>Syntax</h3>
+                <p>
+                   clamp(<span>value1, idealValue, value3</span>)
+                </p>
+            </div>
+            <p class="desc">
+                Description about <span>value1, idealValue, value3</span> of parantheses: <em>
+                    Required. It takes three parameters: a minimum value, 
+                    a preferred value, and a maximum allowed value. 
+                    The clamp() function can be used anywhere a 
+                    &lt;length&gt;, &lt;frequency&gt;, &lt;angle&gt;, &lt;time&gt;, &lt;percentage&gt;, 
+                        &lt;number&gt;, or &lt;integer&gt; is allowed.
+                </em>
+            </p>
+            <div class="example-clamp">
+                <h3>Example</h3>
+                <p class="example4">
+                    Lorem ipsum dolor sit amet consectetur tis officiis eveniet! Pariatur ducimus, ex totam voluptatem sunt porro reprehenderit ratione minima placeat. Veniam ipsum ad cum nesciunt tenetur. Unde, fugiat? Illo, obcaecati. Tenetur mollitia magni quo sint, modi accusamus itaque error rem eligendi deleniti, aspernatur amet dicta exercitationem, ea laudantium necessit ab id quasi dolor voluptates a obcaecati asperiores iusto quas.
+                    Lorem ipsum dolor sit amet consectetur tis officiis eveniet! Pariatur ducimus, ex totam voluptatem sunt porro reprehenderit ratione minima placeat. Veniam ipsum ad cum nesciunt tenetur. Unde, fugiat? Illo, obcaecati. Tenetur mollitia magni quo sint, modi accusamus itaque error rem eligendi deleniti, aspernatur amet dicta exercitationem, ea laudantium necessit ab id quasi dolor voluptates a obcaecati asperiores iusto quas.
+                    Lorem ipsum dolor sit amet consectetur tis officiis eveniet! Pariatur ducimus, ex totam voluptatem sunt porro reprehenderit ratione minima placeat. Veniam ipsum ad cum nesciunt tenetur. Unde, fugiat? Illo, obcaecati. Tenetur mollitia magni quo sint, modi accusamus itaque error rem eligendi deleniti, aspernatur amet dicta exercitationem, ea laudantium necessit ab id quasi dolor voluptates a obcaecati asperiores iusto quas.
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
