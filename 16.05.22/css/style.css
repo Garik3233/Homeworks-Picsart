@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 96%;
+    margin: 0 auto;
+    background: rgb(248, 245, 245);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    margin-bottom: 80px;
+    text-align: center;
+}
+h2 {
+    text-shadow: 0 5px 10px #009688;
+}
+
+h2,
+h3,
+p {
+    margin-bottom: 25px;
+}
+
+.syntax {
+    border: 1px dashed black;
+    padding: 8px 6px;
+    display: inline-block;
+}
+
+.example {
+    width: 70%;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.to-bottom {
+    background-image: linear-gradient(blue, violet);
+}
+
+.to-right {
+    background-image: linear-gradient(to right,#ccc, rgb(0, 110, 255), violet);
+}
+
+.angle {
+    background-image: linear-gradient(135deg, rgb(225, 255, 0), rgb(130, 238, 211));
+}
+
+.transparency {
+    background-image: linear-gradient(to right, rgba(255, 145, 0, 1), rgba(255, 145, 0, 0));
+}
+
+.repeat {
+    background-image: repeating-linear-gradient(45deg, rgb(0, 255, 234) 10%, violet 15%, rgb(241, 110, 62));
+}
+
+.radial1 {
+    background-image: radial-gradient(circle, red 5%, yellow 15%, green 60%);
+}
+
+ol {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.radial2 {
+    background-image: radial-gradient(closest-side at 30%, red, yellow, rgba(24, 38, 46, 0.73));
+}
+
+.radial3 {
+    background-image: repeating-radial-gradient(rgb(255, 166, 0), black 10%, white 15%);
+}
+
+.conic {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+.conic1 {
+    background-image: conic-gradient(red, yellow, green, blue, black, grey, white);
+}
+
+.conic2 {
+    background-image: conic-gradient(rgb(0, 255, 42) 0deg, rgb(0, 255, 42) 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+}
+
+.conic3 {
+    background-image: repeating-conic-gradient(rgb(74, 9, 130) 10%, rgb(0, 255, 247) 20%);
+}
+.t-o {
+    white-space: nowrap;
+}
+.t-o,
+.t-o1 {
+    width: 70px; 
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid #000000;
+}
+
+.t-o:hover {
+    overflow: visible;
+  }
+
+.t-o1 {
+    white-space: wrap;
+}
+
+.word-wrap,
+.word-wrap1 {
+    width: 150px; 
+    margin-bottom: 20px;
+    border: 1px solid #111;
+    display: inline-block;
+}
+
+.word-wrap {
+    margin-right: 50px;
+    word-wrap: break-word;
+}
+
+.word-wrap1 {
+    word-wrap: normal;
+}
+
+div[class^="word"] {
+    display: inline-block;
+    width: 140px;
+    margin-right: 150px;
+    margin-bottom: 30px;
+    border: 1px solid #111;
+}
+
+p.a {
+    word-break: normal;
+}
+  
+p.b {
+    word-break: keep-all;
+}
+  
+p.c {
+    word-break: break-all;
+}
+
+.write-mode {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 30px;
+    border: 1px solid #111;
+}
+
+p.test1 {
+    writing-mode: horizontal-tb; 
+  }
+  
+p.test2 {
+    writing-mode: vertical-rl; 
+}
+
+.image {
+    display: inline-block;
+    margin-bottom: 70px;
+}
+
+img {
+    width: 500px;
+    height: 400px;
+    margin-right: 18px;
+    transition: all .35s ease-in-out;
+}
+
+.img1 {
+    filter: blur(3px) grayscale(10%);
+}
+
+.img2 {
+    filter: opacity(.7) invert(75%);
+}
+
+.img3 {
+    filter: contrast(150%) brightness(125%) hue-rotate(50deg);
+}
+
+.img4 {
+    filter: saturate(6) sepia(90%);
+}
+
+.img5 {
+    filter: drop-shadow(0 5px 15px rgb(105, 131, 127)) 
+            saturate(1) sepia(9%) 
+            contrast(100%) opacity(.95) invert(5%);
+}
+
+.img6 {
+    filter: none;
+}
+
+.img1:hover,
+.img2:hover,
+.img3:hover,
+.img4:hover,
+.img5:hover {
+    filter: none;
+}
+
+.img6:hover {
+    filter: blur(5px) contrast(150%);
+    animation: mymove 3s infinite;
+    position: relative;
+}
+
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 50px;}
+  }

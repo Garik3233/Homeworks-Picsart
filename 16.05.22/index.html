@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients, Text Overflow, Filters, @keyframes</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Gradients, Text Overflow, Filters, @keyframes</h1>
+    </header>
+    <section class="gradient">
+        <h2>Linear Gradient</h2>
+        <p>
+            To create a linear gradient you must define at least 
+            two color stops. Color stops are the colors you want to 
+            render smooth transitions among. You can also set a 
+            starting point and a direction (or an angle) along with the gradient effect.
+        </p>
+        <h3>Syntax</h3>
+        <p class="syntax">
+            background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+        </p>
+        <p>
+            Direction - Top to Bottom (this is default)
+        </p>
+        <div class="to-bottom example"></div>
+        <p>
+            Direction - Left to Right
+        </p>
+        <div class="to-right example"></div>
+        <p>
+            If you want more control over the direction of the gradient, 
+            you can define an angle, instead of the predefined directions 
+            (to bottom, to top, to right, to left, to bottom right, etc.). 
+            A value of 0deg is equivalent to "to top". A value of 90deg is equivalent 
+            to "to right". A value of 180deg is equivalent to "to bottom".
+        </p>
+        <div class="angle example"></div>
+        <p>
+            CSS gradients also support transparency, 
+            which can be used to create fading effects.
+        </p>
+        <div class="transparency example"></div>
+        <p>
+            The repeating-linear-gradient() function is 
+            used to repeat linear gradients:
+        </p>
+        <div class="repeat example"></div>
+        <h2>Radial Gradient</h2>
+        <p>
+            A radial gradient is defined by its center.
+        </p>
+        <p>
+            To create a radial gradient you must also define at least two color stops.
+        </p>
+        <h3>Syntax</h3>
+        <p class="syntax">
+            background-image: radial-gradient(shape size at position, start-color, ..., last-color);
+        </p>
+        <p>
+            By default, shape is ellipse, size is farthest-corner, and position is center.
+        </p>
+        <div class="radial1 example"></div>
+        <p>
+            The size parameter defines the size of the gradient. It can take four values:
+        </p>
+        <ol>
+            <li>closest-side</li>
+            <li>farthest-side</li>
+            <li>closest-corner</li>
+            <li>farthest-corner</li>
+        </ol>
+        <div class="radial2 example"></div>
+        <p>
+            A repeating radial gradient
+        </p>
+        <div class="radial3 example"></div>
+        <h2>Conic Gradient</h2>
+        <p>
+            A conic gradient is a gradient with color transitions rotated around a center point.
+        </p>
+        <p>
+            To create a conic gradient you must define at least two colors.
+        </p>
+        <h3>Syntax</h3>
+        <p class="syntax">
+            background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...);
+        </p>
+        <p>
+            By default, angle is 0deg and position is center.
+            If no degree is specified, the colors will be spread 
+            equally around the center point.
+        </p>
+        <div class="conic conic1"></div>
+        <p>
+            Here is another pie chart with defined degrees for all the colors:
+        </p>
+        <div class="conic conic2"></div>
+        <p>
+            The repeating-conic-gradient() function is used to repeat conic gradients:
+        </p>
+        <div class="conic conic3"></div>
+    </section>
+    <section class="text">
+        <h2>Text Overflow</h2>
+        <p>
+            The text-overflow property specifies how overflowed content 
+            that is not displayed should be signaled to the user. 
+            It can be clipped, display an ellipsis (...), or display a custom string.
+        </p>
+        <p>
+            Both of the following properties are required for text-overflow: white-space: nowrap;
+            overflow: hidden;
+        </p>
+        <h3>Syntax</h3>
+        <p class="syntax">
+            text-overflow: clip|ellipsis|string|initial|inherit;
+        </p>
+        <p>Hover over the div below, to see the entire text.</p>
+        <div class="t-o">This is some long text that will not fit in the box.</div>
+        <div class="t-o1">This is some long text that will not fit in the box.</div>
+        <h3>Word wrap</h3>
+        <p>
+            The word-wrap property allows long words 
+            to be able to be broken and wrap onto the next line.
+        </p>
+        <div class="word-wrap"> 
+            This div contains a very long word: 
+            thisisaveryveryveryveryveryverylongword. 
+            The long word will break and wrap to the next line.
+        </div>
+        <div class="word-wrap1"> 
+            This div contains a very long word: 
+            thisisaveryveryveryveryveryverylongword. 
+            The long word will break and wrap to the next line.
+        </div>
+        <h3>Syntax</h3>
+        <p class="syntax">
+            word-wrap: normal|break-word|initial|inherit;
+        </p>
+        <h3>Word break</h3>
+        <p>
+            The word-break property specifies 
+            how words should break when reaching the end of a line.
+        </p>
+        <div class="word-break-normal">
+            <h3>word-break: normal (default):</h3>
+            <p class="a">
+                Thisissomeveryveryverylong word. Words will break according to usual rules.
+            </p>
+        </div>
+        <div class="word-break-keep-all">
+            <h3>word-break: keep-all:</h3>
+            <p class="b">Thisissomeveryveryverylong word. 
+                This text will-break-at-hyphens.
+            </p>
+
+        </div>
+        <div class="word-break-break-all">
+            <h3>word-break: break-all:</h3>
+            <p class="c">
+                Thisissomeveryveryverylong word. This text will break at any character.
+            </p>
+        </div>
+        <h3>Syntax</h3>
+        <p class="syntax">
+            word-break: normal|break-all|keep-all|break-word|initial|inherit;
+        </p>
+        <h3>Writing mode</h3>
+        <p>
+            The writing-mode property specifies whether lines of text 
+            are laid out horizontally or vertically.
+        </p>
+        <div class="write-mode">
+            <p class="test1">Some text with horizontal-tb</p>
+            <p class="test2">Some text with vertical-rl</p>
+        </div>
+    </section>
+    <section class="filter">
+        <h2>Filter property</h2>
+        <p>
+            The filter property defines visual effects 
+            (like blur and saturation) to an element (often img).
+        </p>
+        <h3>Syntax</h3>
+        <p class="syntax">
+            filter: none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia() | url();
+        </p>
+        <p>
+            To use multiple filters, separate each filter with a space
+        </p>
+        <div>
+            <div class="image">
+                <p>Used filters: blur, grayscale</p> 
+                <img src="./images/2.jpg" alt="Photo" class="img1">
+            </div>
+            <div class="image">
+                <p>Used filters: opacity, invert</p> 
+                <img src="./images/3.jpg" alt="Photo" class="img2">
+            </div>
+            <div class="image">
+                <p>Used filters: contrast, brightness, hue-rotate</p> 
+                <img src="./images/4.jpg" alt="Photo" class="img3">
+            </div>
+        </div>
+        <div>
+            <div class="image">
+                <p>Used filters: saturate, sepia</p>
+                <img src="./images/5.jpg" alt="Photo" class="img4">
+            </div>
+            <div class="image">
+                <p>Used filters: drop-shadow,
+                    saturate, sepia, 
+                    contrast, opacity, invert
+                </p>
+                <img src="./images/6.jpg" alt="Photo" class="img5">
+            </div>
+            <div class="image">
+                <p>Used filters: none</p>
+                <img src="./images/6.jfif" alt="Photo" class="img6">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
