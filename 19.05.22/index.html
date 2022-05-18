@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Flexbox</h1>
+    </header>
+    <section>
+        <h2>Flexbox Elements</h2>
+        <p>
+            To start using the Flexbox model, 
+            you need to first define a flex container.
+        </p>
+        <div class="flex-container1">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <p>
+            Direct child elements(s) of the flexible 
+            container automatically becomes flexible items.
+        </p>
+        <p>
+            The flex container becomes flexible by setting the <q>display</q> property to <q>flex</q>:
+        </p>
+        <p>
+            The flex container properties are:
+        </p>
+        <ul>
+            <li><a href="#flex1">flex-direction</a></li>
+            <li><a href="#flex2">flex-wrap</a></li>
+            <li><a href="#flex3">flex-flow</a></li>
+            <li><a href="#flex4">justify-content</a></li>
+            <li><a href="#">align-items</a></li>
+            <li><a href="#">align-content</a></li>
+        </ul>
+        <h2 id="flex1">Flex-Direction</h2>
+        <p>
+            The <strong><em>row</em></strong>-(default) value stacks the flex items horizontally (from left to right):
+        </p>
+        <div class="dir">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <p>
+            The <strong><em>column</em></strong> value stacks the flex items vertically (from top to bottom):
+        </p>
+        <div class="dir1">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <p>
+            The <strong><em>column-reverse</em></strong> value stacks the 
+            flex items vertically (but from bottom to top):
+        </p>
+        <div class="dir2">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <p>
+            The <strong><em>column-reverse</em></strong> value stacks the flex items horizontally (but from right to left):
+        </p>
+        <div class="dir3">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+
+        <h2 id="flex2">Flex-Wrap</h2>
+        <p>
+            The <strong><em>flex-wrap</em></strong>property specifies whether the flex items should wrap or not.
+        </p>
+        <p>
+            The <strong><em>wrap</em></strong> value specifies that the flex items will wrap if necessary:
+        </p>
+        <div class="wrap">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+        </div>
+        <p>
+            The <strong><em>nowrap</em></strong> value specifies that the flex items will not wrap (this is default):
+        </p>
+        <div class="wrap1">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+        </div>
+        <p>
+            The <strong><em>wrap-reverse</em></strong> value specifies that the flexible items will wrap if necessary, in reverse order:
+        </p>
+        <div class="wrap2">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+        </div>
+        <h2 id="flex3">Flex-Flow</h2>
+        <p>
+            The <strong><em>flex-flow</em></strong> property is a shorthand property for setting both the <i>flex-direction</i> and <i>flex-wrap</i>  properties.
+        </p>
+        <div class="flow">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>  
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>  
+            <div>7</div>
+            <div>8</div> 
+        </div>
+        <h2 id="flex4">Justify-Content</h2>
+        <p>
+            The <strong><em>justify-content</em></strong> property is used to align the flex items:
+        </p>
+        <p>
+            The <strong><em>center</em></strong> value aligns the flex items at the center of the container:
+        </p>
+        <div class="j-c">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>  
+        </div>
+        <p>
+            The <strong><em>flex-start</em></strong> value aligns the flex items at the beginning of the container (this is default):
+        </p>
+        <div class="j-c1">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>  
+        </div>
+        <p>
+            The <strong><em>flex-end</em></strong> value aligns the flex items at the end of the container:
+        </p>
+        <div class="j-c2">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>  
+        </div>
+        <p>
+            The <strong><em>space-around</em></strong> value displays the flex items with space before, between, and after the lines:
+        </p>
+        <div class="j-c3">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>  
+        </div>
+        <p>
+            The <strong><em>space-between</em></strong> value displays the flex items with space between the lines:
+        </p>
+        <div class="j-c4">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>  
+        </div>
+        <h2>The Order property</h2>
+        <p>
+            The <strong><em>order</em></strong> property specifies the order of the flex items.
+        </p>
+        <div class="order">
+            <div>1</div>
+            <div style="order: 2">2</div>
+            <div style="order: -1">3</div> 
+            <div>4</div>
+        </div>
+        <p>
+            The first flex item in the code does not 
+            have to appear as the first item in the layout.
+        </p>
+        <p>
+            The order value must be a number, default value is 0.
+        </p>
+    </section>
+</body>
+</html>
