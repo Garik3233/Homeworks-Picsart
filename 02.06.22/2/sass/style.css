@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidenav {
+  height: 100%;
+  width: 300px;
+  padding-top: 20px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  color: #ccc;
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+}
+
+.content {
+  margin-left: 350px;
+}
+.content h1 {
+  margin-bottom: 20px;
+}
+.content p {
+  margin-bottom: 20px;
+}/*# sourceMappingURL=style.css.map */

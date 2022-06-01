@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "./nav";
+
+.container {
+    padding-bottom: 2500px;
+    display: flex;
+
+    .content {
+        margin-left: 60px;
+        flex: 1;
+        font-size: 45px;
+    }
+}
+
